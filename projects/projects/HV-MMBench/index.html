@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="HV-MMBench">
+  <meta name="keywords" content="T2V, Video Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HV-MMBench</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <!-- <link rel="icon" href="../assets/images/favicon-32x32.png"> -->
+  <link rel="icon" href="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <img src="assets/images/invad_1024.png" class="interpolation-image" alt="logo" width="30%"> -->
+          <!-- <img src="assets/images/vitad_1024.png" class="interpolation-image" alt="logo" style="height: 20% !important;" width="30%"> -->
+          <!-- <h1 class="title is-1 publication-title"><span style="color:#b02418; font-weight:bold;">InvAD:</span> Learning Feature Inversion for Multi-class Unsupervised Anomaly Detection under General-purpose COCO-AD Benchmark</h1> -->
+          <img src="assets/images/logo.png" class="interpolation-image" alt="logo" width="100%">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=J9lTFAUAAAAJ&hl=en">Yuxuan Cai</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=2hA4X9wAAAAJ&hl=en">Jiangning Zhang†</a><sup>2</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=m3KDreEAAAAJ&hl=en">Zhucun Xue</a><sup>2</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=fa4NkScAAAAJ&hl=en&oi=ao">Zhenye Gan</a><sup>3</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=gUJWww0AAAAJ&hl=en&oi=ao">Qingdong He</a><sup>3</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=3lMuodUAAAAJ&hl=en&oi=ao">Xiaobin Hu</a><sup>3</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=-OxQlHsAAAAJ&hl=en&oi=ao">Junwei Zhu</a><sup>3</sup>, </span> 
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=xiK4nFUAAAAJ&hl=en">Yabiao Wang</a><sup>3</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=fqte5H4AAAAJ&hl=en">Chengjie Wang</a><sup>3</sup>, </span> 
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=YSIe_24AAAAJ&hl=en&oi=ao">Xinwei He</a><sup>4</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en&oi=ao">Xiang Bai</a><sup>1</sup>, </span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Huazhong University of Science and Technology &nbsp </span>
+            <span class="author-block"><sup>2</sup>Zhejiang University &nbsp </span>
+            <span class="author-block"><sup>3</sup>Youtu Lab, Tencent &nbsp </span>
+            <span class="author-block"><sup>4</sup>Huazhong Agricultural University &nbsp </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.10760"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=KPh62pfSHLQ"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Fantasyele/HV-MMBench"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/ccaiyuxuan/HVMMBench/tree/main"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section" id="teaser">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h3 class="title is-4">
+            UltraWAN is capable of native UHD video generation with LoRA fine-tuning in UltraVideo.
+          </h3>
+          <div class="item">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/KPh62pfSHLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <!-- The quality of the video dataset (image quality, resolution, and fine-grained caption) greatly influences the performance of the video generation model. The growing demand for video applications sets higher requirements for high-quality video generation models. For example, the generation of movie-level Ultra-High Definition (UHD) videos and the creation of 4K short video content. However, the existing public datasets cannot support related research and applications. In this paper, we first propose a high-quality open-sourced UHD-4K (22.4% of which are 8K) text-to-video dataset named UltraVideo, which contains a wide range of topics (more than 100 kinds), and each video has 9 structured captions with one summarized caption (average of 824 words). Specifically, we carefully design a highly automated curation process with four stages to obtain the final high-quality dataset: <i>i)</i> collection of diverse and high-quality video clips. <i>ii)</i> statistical data filtering. <i>iii)</i> model-based data purification. <i>iv)</i> generation of comprehensive, structured captions. In addition, we expand WAN to UltraWAN-1K/-4K, which can natively generate high-quality 1K/4K videos with more consistent text controllability, demonstrating the effectiveness of our data curation. We believe that this work can make a significant contribution to future research on UHD video generation. -->
+            Multimodal Large Language Models (MLLMs) have demonstrated significant advances in visual understanding tasks involving both images and videos. However, their capacity to comprehend human-centric video data remains underexplored, primarily due to the absence of comprehensive and high-quality evaluation benchmarks. Existing human-centric benchmarks predominantly emphasize video generation quality and action recognition, while overlooking essential perceptual and cognitive abilities required in human-centered scenarios. Furthermore, they are often limited by single-question paradigms and overly simplistic evaluation metrics. To address above limitations, we propose a modern HV-MMBench, a rigorously curated benchmark designed to provide a more holistic evaluation of MLLMs in human-centric video understanding. Compared to existing human-centric video benchmarks, our work offers the following key features: (1) Diverse evaluation dimensions: HV-MMBench encompasses 14 tasks, ranging from basic attribute perception (e.g., age estimation, emotion recognition) to advanced cognitive reasoning (e.g., social relationship prediction, intention prediction), enabling comprehensive assessment of model capabilities; (2) Varied data types: The benchmark includes multiple-choice, cloze, and open-ended question formats, combined with diverse evaluation metrics, to more accurately and robustly reflect model performance; (3) Multi-domain video coverage: The benchmark spans 50 distinct visual scenarios, ensuring broad scene generalization; (4) Temporal coverage: The benchmark covers videos from short-term (10 seconds) to long-term (up to 30min) durations, facilitating evaluation of MLLMs' abilities to capture contextual dynamics across varying temporal scales. We evaluate several advanced open-source MLLMs on the HV-MMBench. While models excel in closed-form tasks, their performance drops sharply in open-ended generation, revealing a reliance on shallow patterns over genuine reasoning. In contrast, cloze and open-ended formats better expose reasoning challenges in human behavior understanding. By spanning diverse tasks and paradigms, HV-MMBench systematically reveals these limitations and facilitates the MLLM development. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+
+  <!-- Highlights Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Title (full width) -->
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">High-lights</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>1)</strong> Including 14 human-centric tasks, ranging from basic attribute perception to advanced cognitive reasoning. <br>
+            <strong>2)</strong> Including multiple-choice, cloze, and open-ended question formats, combined with diverse evaluation metrics.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Images with same width as logo -->
+    <div class="columns is-centered">
+      <div class="column is-12 has-text-centered">
+        <img src="assets/images/intro.png" style="width: 100%; height: auto;" alt="Intro image">
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-12 has-text-centered">
+        <img src="assets/images/pipeline.png" style="width: 100%; height: auto;" alt="Pipeline image">
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-12 has-text-centered">
+        <img src="assets/images/statistic.png" style="width: 100%; height: auto;" alt="Statistic image">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{invad,
+        title={Learning Feature Inversion for Multi-class Anomaly Detection under General-purpose COCO-AD Benchmark},
+        author={Jiangning Zhang and Chengjie Wang and Xiangtai Li and Guanzhong Tian and Zhucun Xue and Yong Liu and Guansong Pang and Dacheng Tao},
+        journal={arXiv preprint arXiv:2404.10760},
+        year={2024}
+      }
+    </code></pre>
+  </div>
+</section> -->
+
+
+<!-- <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./assets/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+</body>
+</html>
+
